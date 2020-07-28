@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CD0-2f-Zwi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,6 +7,62 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="44g-9V-CS6">
+            <objects>
+                <viewController id="aZR-Km-bWn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="60i-FE-iN7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ALl-dQ-F0Y">
+                                <rect key="frame" x="20" y="108" width="374" height="167.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you the person who got hurt?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCK-je-jeZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNP-qj-A1C">
+                                        <rect key="frame" x="0.0" y="47.5" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="gky-QR-Jpm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="I am the person who got hurt"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="PUz-BP-15O"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRG-Ip-xZQ">
+                                        <rect key="frame" x="0.0" y="117.5" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Bk0-MB-8Sq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="I am helping someone who got hurt"/>
+                                        <connections>
+                                            <segue destination="UyI-DB-WFL" kind="show" id="atU-0o-CQZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ALl-dQ-F0Y" firstAttribute="leading" secondItem="BjD-2E-5hM" secondAttribute="leading" constant="20" id="Nio-W8-duM"/>
+                            <constraint firstItem="ALl-dQ-F0Y" firstAttribute="top" secondItem="BjD-2E-5hM" secondAttribute="top" constant="20" id="cnV-xX-O8E"/>
+                            <constraint firstAttribute="trailing" secondItem="ALl-dQ-F0Y" secondAttribute="trailing" constant="20" id="sdN-cU-75Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BjD-2E-5hM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Gk-A8-gR7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Wc-Vd-VhC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="138"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -16,7 +72,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6Te-Lc-dGa">
-                                <rect key="frame" x="20" y="64" width="374" height="447.5"/>
+                                <rect key="frame" x="20" y="108" width="374" height="447.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How did you get hurt?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4V-7I-LK7">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="27.5"/>
@@ -29,13 +85,18 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="xr4-MW-Tj5"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="I fell down"/>
+                                        <connections>
+                                            <segue destination="F8Y-4A-UJM" kind="show" id="u4Z-dj-Iww"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zus-OD-bzJ">
                                         <rect key="frame" x="0.0" y="117.5" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="KWj-Wx-tky"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="I got burnt"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjL-lI-u1R">
@@ -43,6 +104,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="ytO-b9-OA2"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="I got hit by something"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cg7-kT-Td2">
@@ -50,6 +112,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="KNq-kx-eP4"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="I inhaled toxic fumes"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hem-cH-INV">
@@ -57,6 +120,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="hXv-Vp-Wob"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title=" I got cut"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFk-sd-kE7">
@@ -64,6 +128,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="3IK-t9-MxI"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="I strained my muscles"/>
                                     </button>
                                 </subviews>
@@ -77,6 +142,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="SO0-ac-RYP"/>
                     <connections>
                         <outlet property="burntButton" destination="Zus-OD-bzJ" id="hwt-12-xPV"/>
                         <outlet property="cutButton" destination="Hem-cH-INV" id="8E8-6t-IS8"/>
@@ -88,7 +154,97 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+            <point key="canvasLocation" x="2133" y="-368"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Tu4-yh-Vnq">
+            <objects>
+                <viewController id="UyI-DB-WFL" customClass="ViewController" customModule="QuickFix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bKI-Kk-kPR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nLJ-HS-sbU">
+                                <rect key="frame" x="20" y="108" width="374" height="447.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How did they get hurt?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKy-JQ-VG6">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSL-7K-mfM">
+                                        <rect key="frame" x="0.0" y="47.5" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="J8X-Qm-4ej"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="They fell down"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2S-Rh-Dpe">
+                                        <rect key="frame" x="0.0" y="117.5" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Th3-QH-m99"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="They got burnt"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MjF-XR-yCG">
+                                        <rect key="frame" x="0.0" y="187.5" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="uxR-od-elK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="They got hit by something"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnW-vk-lfL">
+                                        <rect key="frame" x="0.0" y="257.5" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="5PL-vr-HqO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="They inhaled toxic fumes"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJU-sE-NX8">
+                                        <rect key="frame" x="0.0" y="327.5" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hxL-09-H5m"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="They got cut"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk8-sw-Bb9">
+                                        <rect key="frame" x="0.0" y="397.5" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ion-7v-fSU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="They strained their muscles"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cjx-7f-uHh" firstAttribute="trailing" secondItem="nLJ-HS-sbU" secondAttribute="trailing" constant="20" id="6nX-HA-5SI"/>
+                            <constraint firstItem="nLJ-HS-sbU" firstAttribute="top" secondItem="cjx-7f-uHh" secondAttribute="top" constant="20" id="iHQ-lV-GJC"/>
+                            <constraint firstItem="nLJ-HS-sbU" firstAttribute="leading" secondItem="cjx-7f-uHh" secondAttribute="leading" constant="20" id="img-8E-Nat"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cjx-7f-uHh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Liw-Us-u6I"/>
+                    <connections>
+                        <outlet property="burntButton" destination="t2S-Rh-Dpe" id="NEf-CL-Z5x"/>
+                        <outlet property="cutButton" destination="eJU-sE-NX8" id="f3K-wJ-TTF"/>
+                        <outlet property="felldownButton" destination="NSL-7K-mfM" id="vHm-Iz-Ayr"/>
+                        <outlet property="fumesButton" destination="GnW-vk-lfL" id="1hr-m2-AWy"/>
+                        <outlet property="hitButton" destination="MjF-XR-yCG" id="3BM-xJ-Yrc"/>
+                        <outlet property="strainedButton" destination="Gk8-sw-Bb9" id="WGD-0i-MEH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SNc-Ou-oxU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2132" y="430"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jTt-RQ-94r">
@@ -97,13 +253,66 @@
                     <view key="view" contentMode="scaleToFill" id="BSU-a2-eF2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Vf5-vg-RM0">
+                                <rect key="frame" x="20" y="108" width="374" height="167.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What kind of force did you get hit by " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqJ-6d-hTK">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xw-BR-wQ4">
+                                        <rect key="frame" x="0.0" y="47.5" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="0hw-eA-0Dj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Blunt force"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n36-wF-fad">
+                                        <rect key="frame" x="0.0" y="117.5" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="BWx-uN-9qV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Sharp Force"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8Uu-Ra-H8Y" firstAttribute="trailing" secondItem="Vf5-vg-RM0" secondAttribute="trailing" constant="20" id="3YU-MQ-ApV"/>
+                            <constraint firstItem="Vf5-vg-RM0" firstAttribute="leading" secondItem="8Uu-Ra-H8Y" secondAttribute="leading" constant="20" id="TRp-im-Seq"/>
+                            <constraint firstItem="Vf5-vg-RM0" firstAttribute="top" secondItem="8Uu-Ra-H8Y" secondAttribute="top" constant="20" id="pia-Y5-YcM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8Uu-Ra-H8Y"/>
                     </view>
+                    <navigationItem key="navigationItem" id="5Gx-CT-nKd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LNF-NO-7Wq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1119" y="-267"/>
+            <point key="canvasLocation" x="3397" y="-618"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZMw-vx-ToH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CD0-2f-Zwi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EQi-Nd-pom">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aZR-Km-bWn" kind="relationship" relationship="rootViewController" id="A4Q-Hw-N92"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Wb-AD-tm6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>
