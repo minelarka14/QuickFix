@@ -10,11 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var felldownButton: UIButton!
+    @IBOutlet weak var burntButton: UIButton!
+    @IBOutlet weak var hitButton: UIButton!
+    @IBOutlet weak var fumesButton: UIButton!
+    @IBOutlet weak var cutButton: UIButton!
+    @IBOutlet weak var strainedButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setuplooks()
     }
-
-
+    func setuplooks(){
+        Utilities.styleFilledButton(felldownButton)
+        Utilities.styleFilledButton(burntButton)
+        Utilities.styleFilledButton(hitButton)
+        Utilities.styleFilledButton(fumesButton)
+        Utilities.styleFilledButton(cutButton)
+        Utilities.styleFilledButton(strainedButton)
+    }
 }
 
