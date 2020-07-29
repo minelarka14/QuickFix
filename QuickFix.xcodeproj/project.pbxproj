@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28FCB7E140F3AAD8B8CAC9DD /* Pods_QuickFix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFCA0D88E54E8A055432C45 /* Pods_QuickFix.framework */; };
 		2A428BC424CFE9CE009E9FF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A428BC324CFE9CE009E9FF7 /* AppDelegate.swift */; };
 		2A428BC624CFE9CE009E9FF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A428BC524CFE9CE009E9FF7 /* SceneDelegate.swift */; };
 		2A428BC824CFE9CE009E9FF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A428BC724CFE9CE009E9FF7 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		140EA79CCA496F3A0325EE9A /* Pods-QuickFix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickFix.debug.xcconfig"; path = "Target Support Files/Pods-QuickFix/Pods-QuickFix.debug.xcconfig"; sourceTree = "<group>"; };
 		2A428BC024CFE9CE009E9FF7 /* QuickFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A428BC324CFE9CE009E9FF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A428BC524CFE9CE009E9FF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		2A428BD124CFE9D2009E9FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A428BDB24CFEBD9009E9FF7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2A428BDC24CFEBD9009E9FF7 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		9786B76D51690A76CB0BE961 /* Pods-QuickFix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickFix.release.xcconfig"; path = "Target Support Files/Pods-QuickFix/Pods-QuickFix.release.xcconfig"; sourceTree = "<group>"; };
+		BFFCA0D88E54E8A055432C45 /* Pods_QuickFix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickFix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28FCB7E140F3AAD8B8CAC9DD /* Pods_QuickFix.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		076F9F29C292617EE4D205BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				140EA79CCA496F3A0325EE9A /* Pods-QuickFix.debug.xcconfig */,
+				9786B76D51690A76CB0BE961 /* Pods-QuickFix.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		237B847E539B24D5CF78CEEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCA0D88E54E8A055432C45 /* Pods_QuickFix.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2A428BB724CFE9CE009E9FF7 = {
 			isa = PBXGroup;
 			children = (
 				2A428BC224CFE9CE009E9FF7 /* QuickFix */,
 				2A428BC124CFE9CE009E9FF7 /* Products */,
+				076F9F29C292617EE4D205BB /* Pods */,
+				237B847E539B24D5CF78CEEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A428BD424CFE9D2009E9FF7 /* Build configuration list for PBXNativeTarget "QuickFix" */;
 			buildPhases = (
+				227EF4B458A3DCF236ABCD59 /* [CP] Check Pods Manifest.lock */,
 				2A428BBC24CFE9CE009E9FF7 /* Sources */,
 				2A428BBD24CFE9CE009E9FF7 /* Frameworks */,
 				2A428BBE24CFE9CE009E9FF7 /* Resources */,
+				585C4FABB22136FF9ADF4316 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,6 +173,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		227EF4B458A3DCF236ABCD59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickFix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		585C4FABB22136FF9ADF4316 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickFix/Pods-QuickFix-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickFix/Pods-QuickFix-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickFix/Pods-QuickFix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2A428BBC24CFE9CE009E9FF7 /* Sources */ = {
@@ -298,6 +367,7 @@
 		};
 		2A428BD524CFE9D2009E9FF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 140EA79CCA496F3A0325EE9A /* Pods-QuickFix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -315,6 +385,7 @@
 		};
 		2A428BD624CFE9D2009E9FF7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9786B76D51690A76CB0BE961 /* Pods-QuickFix.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
