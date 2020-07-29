@@ -114,6 +114,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="I inhaled toxic fumes"/>
+                                        <connections>
+                                            <segue destination="jq9-zs-0nv" kind="show" id="rWb-4I-w9G"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hem-cH-INV">
                                         <rect key="frame" x="0.0" y="327.5" width="374" height="50"/>
@@ -204,6 +207,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="They inhaled toxic fumes"/>
+                                        <connections>
+                                            <segue destination="aRE-Ek-duf" kind="show" id="SbL-Qv-hPg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJU-sE-NX8">
                                         <rect key="frame" x="0.0" y="327.5" width="374" height="50"/>
@@ -245,6 +251,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SNc-Ou-oxU" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2132" y="430"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cPH-Hd-W5c">
+            <objects>
+                <viewController id="aRE-Ek-duf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rs5-bn-avE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Uid-Du-S3A"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="W5Z-CW-FRM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a7m-hf-h2d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2972" y="157"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jTt-RQ-94r">
@@ -294,7 +316,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LNF-NO-7Wq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3397" y="-618"/>
+            <point key="canvasLocation" x="2786" y="-1173"/>
+        </scene>
+        <!--Toxic Fumes View Controller-->
+        <scene sceneID="ra3-j6-BeK">
+            <objects>
+                <viewController id="jq9-zs-0nv" customClass="toxicFumesViewController" customModule="QuickFix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L1Z-Ix-DdV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aij-nD-e2X">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="s9H-PL-Tdd"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="WuD-Pp-xkJ"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aij-nD-e2X" secondAttribute="trailing" id="Euq-23-Uo9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gnI-X3-o21"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="M9F-id-j2J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dXP-gt-leb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2969.5652173913045" y="-490.17857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZMw-vx-ToH">

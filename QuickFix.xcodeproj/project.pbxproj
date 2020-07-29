@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		28FCB7E140F3AAD8B8CAC9DD /* Pods_QuickFix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFCA0D88E54E8A055432C45 /* Pods_QuickFix.framework */; };
+		2A015FA124D10C6D000F7958 /* toxicFumesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A015FA024D10C6D000F7958 /* toxicFumesViewController.swift */; };
 		2A428BC424CFE9CE009E9FF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A428BC324CFE9CE009E9FF7 /* AppDelegate.swift */; };
 		2A428BC624CFE9CE009E9FF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A428BC524CFE9CE009E9FF7 /* SceneDelegate.swift */; };
 		2A428BC824CFE9CE009E9FF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A428BC724CFE9CE009E9FF7 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		140EA79CCA496F3A0325EE9A /* Pods-QuickFix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickFix.debug.xcconfig"; path = "Target Support Files/Pods-QuickFix/Pods-QuickFix.debug.xcconfig"; sourceTree = "<group>"; };
+		2A015FA024D10C6D000F7958 /* toxicFumesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toxicFumesViewController.swift; sourceTree = "<group>"; };
 		2A428BC024CFE9CE009E9FF7 /* QuickFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A428BC324CFE9CE009E9FF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A428BC524CFE9CE009E9FF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +54,6 @@
 				140EA79CCA496F3A0325EE9A /* Pods-QuickFix.debug.xcconfig */,
 				9786B76D51690A76CB0BE961 /* Pods-QuickFix.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -62,6 +63,14 @@
 				BFFCA0D88E54E8A055432C45 /* Pods_QuickFix.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A015F9F24D10C54000F7958 /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				2A015FA024D10C6D000F7958 /* toxicFumesViewController.swift */,
+			);
+			path = Articles;
 			sourceTree = "<group>";
 		};
 		2A428BB724CFE9CE009E9FF7 = {
@@ -85,6 +94,7 @@
 		2A428BC224CFE9CE009E9FF7 /* QuickFix */ = {
 			isa = PBXGroup;
 			children = (
+				2A015F9F24D10C54000F7958 /* Articles */,
 				2A428BDA24CFEBB7009E9FF7 /* Helpers */,
 				2A428BC324CFE9CE009E9FF7 /* AppDelegate.swift */,
 				2A428BC524CFE9CE009E9FF7 /* SceneDelegate.swift */,
@@ -222,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A428BC824CFE9CE009E9FF7 /* ViewController.swift in Sources */,
+				2A015FA124D10C6D000F7958 /* toxicFumesViewController.swift in Sources */,
 				2A428BC424CFE9CE009E9FF7 /* AppDelegate.swift in Sources */,
 				2A428BC624CFE9CE009E9FF7 /* SceneDelegate.swift in Sources */,
 				2A428BDE24CFEBD9009E9FF7 /* Utilities.swift in Sources */,
