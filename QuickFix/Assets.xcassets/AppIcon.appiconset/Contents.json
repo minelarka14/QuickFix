@@ -1,13 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "drawing.001-3.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "drawing.001-2.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
@@ -33,13 +31,13 @@
       "size" : "40x40"
     },
     {
-      "filename" : "drawing.001-1.png",
+      "filename" : "CM - QuickFix Logo (1).001-1.jpeg",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "drawing.001.png",
+      "filename" : "CM - QuickFix Logo (1).001.jpeg",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
@@ -50,7 +48,6 @@
       "size" : "20x20"
     },
     {
-      "filename" : "drawing.001-5.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "20x20"
@@ -66,7 +63,6 @@
       "size" : "29x29"
     },
     {
-      "filename" : "drawing.001-4.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "40x40"
@@ -77,25 +73,21 @@
       "size" : "40x40"
     },
     {
-      "filename" : "drawing.001-8.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "76x76"
     },
     {
-      "filename" : "drawing.001-9.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "76x76"
     },
     {
-      "filename" : "drawing.001-7.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "drawing.001-6.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
