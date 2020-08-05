@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
     @IBOutlet weak var felldownButton: UIButton!
     @IBOutlet weak var burntButton: UIButton!
     @IBOutlet weak var hitButton: UIButton!
