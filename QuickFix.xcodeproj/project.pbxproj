@@ -17,6 +17,7 @@
 		2A428BD024CFE9D2009E9FF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A428BCE24CFE9D2009E9FF7 /* LaunchScreen.storyboard */; };
 		2A428BDD24CFEBD9009E9FF7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A428BDB24CFEBD9009E9FF7 /* Constants.swift */; };
 		2A428BDE24CFEBD9009E9FF7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A428BDC24CFEBD9009E9FF7 /* Utilities.swift */; };
+		2ADC65E424DA6F9C00899C26 /* selfHurtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADC65E324DA6F9C00899C26 /* selfHurtViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		2A428BD124CFE9D2009E9FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A428BDB24CFEBD9009E9FF7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2A428BDC24CFEBD9009E9FF7 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		2ADC65E324DA6F9C00899C26 /* selfHurtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfHurtViewController.swift; sourceTree = "<group>"; };
 		9786B76D51690A76CB0BE961 /* Pods-QuickFix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickFix.release.xcconfig"; path = "Target Support Files/Pods-QuickFix/Pods-QuickFix.release.xcconfig"; sourceTree = "<group>"; };
 		BFFCA0D88E54E8A055432C45 /* Pods_QuickFix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickFix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -94,6 +96,7 @@
 		2A428BC224CFE9CE009E9FF7 /* QuickFix */ = {
 			isa = PBXGroup;
 			children = (
+				2ADC65E224DA6F6500899C26 /* Styling View Controllers */,
 				2A015F9F24D10C54000F7958 /* Articles */,
 				2A428BDA24CFEBB7009E9FF7 /* Helpers */,
 				2A428BC324CFE9CE009E9FF7 /* AppDelegate.swift */,
@@ -114,6 +117,14 @@
 				2A428BDC24CFEBD9009E9FF7 /* Utilities.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2ADC65E224DA6F6500899C26 /* Styling View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2ADC65E324DA6F9C00899C26 /* selfHurtViewController.swift */,
+			);
+			path = "Styling View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A428BC824CFE9CE009E9FF7 /* ViewController.swift in Sources */,
+				2ADC65E424DA6F9C00899C26 /* selfHurtViewController.swift in Sources */,
 				2A015FA124D10C6D000F7958 /* toxicFumesViewController.swift in Sources */,
 				2A428BC424CFE9CE009E9FF7 /* AppDelegate.swift in Sources */,
 				2A428BC624CFE9CE009E9FF7 /* SceneDelegate.swift in Sources */,
