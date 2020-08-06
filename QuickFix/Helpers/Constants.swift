@@ -9,8 +9,6 @@
 import Foundation
 
 struct Constants {
-    
-    struct Storyboard {
-    }
+    static var curtheme:String?
 }
 
