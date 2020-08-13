@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 struct Constants {
-    static var curtheme:String?
+    static var curtheme = "Light"
+    static var color = UIColor.init(red: 255/255, green: 0/255, blue: 0/255, alpha: 1)
 }
 

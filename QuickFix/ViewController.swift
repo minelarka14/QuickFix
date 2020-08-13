@@ -9,25 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    
-    @IBOutlet weak var felldownButton: UIButton!
-    @IBOutlet weak var burntButton: UIButton!
-    @IBOutlet weak var hitButton: UIButton!
-    @IBOutlet weak var fumesButton: UIButton!
-    @IBOutlet weak var cutButton: UIButton!
-    @IBOutlet weak var strainedButton: UIButton!
+    @IBOutlet weak var selfHurt: UIButton!
+    @IBOutlet weak var othHurt: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    override func viewDidAppear(_ animated: Bool) {
         setuplooks()
     }
+    
     func setuplooks(){
-        Utilities.styleFilledButton(felldownButton)
-        Utilities.styleFilledButton(burntButton)
-        Utilities.styleFilledButton(hitButton)
-        Utilities.styleFilledButton(fumesButton)
-        Utilities.styleFilledButton(cutButton)
-        Utilities.styleFilledButton(strainedButton)
+        switch Constants.curtheme {
+        case "Light":
+            self.view.backgroundColor = UIColor.white
+        case "Dark":
+            self.view.backgroundColor = UIColor.init(red: 45/255, green: 48/255, blue: 45/255, alpha: 1)
+        default:
+            self.view.backgroundColor = UIColor.white
+        }
+        Utilities.styleFilledButton(selfHurt)
+        Utilities.styleFilledButton(othHurt)
     }
 }
 

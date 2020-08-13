@@ -15,9 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xBZ-5d-NAj">
-                                <rect key="frame" x="66.551917011812179" y="78.000000000000114" width="280.00000000000011" height="168"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBZ-5d-NAj">
+                                <rect key="frame" x="67" y="125" width="280" height="160"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="uickFix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Blt-x4-1UN">
                                         <rect key="frame" x="70" y="46" width="204" height="76"/>
@@ -34,6 +33,12 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xBZ-5d-NAj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-243" id="6TO-rK-PtT"/>
+                            <constraint firstItem="xBZ-5d-NAj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="plJ-zS-UA0"/>
+                            <constraint firstItem="xBZ-5d-NAj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qHU-qg-vTz"/>
+                            <constraint firstItem="xBZ-5d-NAj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="81" id="yPL-Pd-m09"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

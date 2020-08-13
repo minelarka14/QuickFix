@@ -7,24 +7,41 @@
 //
 
 import UIKit
+import youtube_ios_player_helper
 
 class toxicFumesViewController: UIViewController {
-
+    var viewable = false
+    @IBOutlet weak var buttonv: UIButton!
+    @IBOutlet var playerView: YTPlayerView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        print("viewdidload")
+        datasave()
+        setup()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setup(){
+        Utilities.styleFilledButton(buttonv)
     }
-    */
-
+    func datasave(){
+        if self.viewable{
+            viewvid()
+        }else{
+            dontview()
+        }
+    }
+    func dontview(){
+        playerView.isHidden = true
+        buttonv.isHidden = false
+    }
+    func viewvid(){
+        buttonv.isHidden = true
+        playerView.isHidden = false
+        playerView.load(withVideoId: "LISG1CdDgWU")
+    }
+    @IBAction func buttonTouch(_ sender: Any) {
+        self.viewable = true
+        datasave()
+    }
 }
