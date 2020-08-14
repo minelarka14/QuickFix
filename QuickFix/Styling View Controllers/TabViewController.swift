@@ -15,18 +15,7 @@ class TabViewController: UITabBarController {
         super.viewDidLoad()
         //
     }
-    /*
-    override func viewDidAppear(_ animated: Bool) {
-        switch Constants.curtheme {
-        case "Light":
-            tabcontrol.barTintColor =  UIColor.white
-        case "Dark":
-            tabcontrol.barTintColor =  UIColor.init(red: 51/255, green: 51/255, blue: 51/255, alpha: 1)
-        default:
-            tabcontrol.barTintColor =  UIColor.white
-        }
-    */
-    }
+}
 
 
  
