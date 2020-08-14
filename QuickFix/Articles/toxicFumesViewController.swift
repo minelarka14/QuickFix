@@ -13,6 +13,7 @@ class toxicFumesViewController: UIViewController {
     var viewable = false
     @IBOutlet weak var buttonv: UIButton!
     @IBOutlet var playerView: YTPlayerView!
+    @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
@@ -38,10 +39,14 @@ class toxicFumesViewController: UIViewController {
     func viewvid(){
         buttonv.isHidden = true
         playerView.isHidden = false
-        playerView.load(withVideoId: "LISG1CdDgWU")
+        Utilities.load(playerView, imgView, "toxicgas")
     }
     @IBAction func buttonTouch(_ sender: Any) {
         self.viewable = true
         datasave()
     }
+}
+
+class gotcutViewController: UIViewController {
+    var viewable = false
 }
