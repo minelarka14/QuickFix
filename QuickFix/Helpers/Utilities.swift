@@ -29,6 +29,12 @@ class Utilities {
             switch nameid {
             case "toxicgas":
                 return "LISG1CdDgWU"
+            case "musclestr":
+                return "nvG5VgLN2IM"
+            case "cut":
+                return "4e7evinsfm0"
+            case "burnt":
+                return "O1kiguGUt3o"
             default:
                 return "INCORRECT_NAME_ERROR"
             }
@@ -41,6 +47,12 @@ class Utilities {
             switch nameimg {
             case "toxicgas":
                 return (UIImage(named: "toxicgasinfo")!, true)
+            case "musclestr":
+                return (UIImage(named: "musclestr"), true)
+            case "cut":
+                return (UIImage(named: "cut"), true)
+            case "burnt":
+                return (UIImage(named: "burnt"), true)
             default:
                 assert(true, "INCORRECT_NAME_ERROR")
             }
