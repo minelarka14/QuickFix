@@ -92,6 +92,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="I fell down"/>
                                         <connections>
+                                            <action selector="fellDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eRN-B9-UJb"/>
                                             <segue destination="F8Y-4A-UJM" kind="show" id="u4Z-dj-Iww"/>
                                         </connections>
                                     </button>
@@ -102,6 +103,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="I got burnt"/>
+                                        <connections>
+                                            <action selector="burnt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O3Q-ma-aHk"/>
+                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjL-lI-u1R">
                                         <rect key="frame" x="0.0" y="187.5" width="374" height="50"/>
@@ -110,6 +114,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="I got hit by something"/>
+                                        <connections>
+                                            <action selector="hitSth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pvo-2e-JcQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cg7-kT-Td2">
                                         <rect key="frame" x="0.0" y="257.5" width="374" height="50"/>
@@ -119,7 +126,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="I inhaled toxic fumes"/>
                                         <connections>
-                                            <segue destination="jq9-zs-0nv" kind="show" id="rWb-4I-w9G"/>
+                                            <action selector="toxicGas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pwg-aa-3TQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hem-cH-INV">
@@ -129,6 +136,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title=" I got cut"/>
+                                        <connections>
+                                            <action selector="gotCut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="55P-ld-3gT"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFk-sd-kE7">
                                         <rect key="frame" x="0.0" y="397.5" width="374" height="50"/>
@@ -137,6 +147,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="I strained my muscles"/>
+                                        <connections>
+                                            <action selector="strainMuscle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GXs-DF-pG6"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -326,61 +339,6 @@
             </objects>
             <point key="canvasLocation" x="3783" y="-1136"/>
         </scene>
-        <!--Toxic Fumes View Controller-->
-        <scene sceneID="ra3-j6-BeK">
-            <objects>
-                <viewController id="jq9-zs-0nv" customClass="toxicFumesViewController" customModule="QuickFix" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="L1Z-Ix-DdV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cv1-d0-9wn">
-                                <rect key="frame" x="0.0" y="88" width="414" height="726"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyA-QO-DJG">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="dTu-Xy-L7n"/>
-                                        </constraints>
-                                        <state key="normal" title="Load video"/>
-                                        <connections>
-                                            <action selector="buttonTouch:" destination="jq9-zs-0nv" eventType="touchUpInside" id="c8W-2R-aI7"/>
-                                        </connections>
-                                    </button>
-                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jxk-4A-cVw" userLabel="playerView" customClass="YTPlayerView">
-                                        <rect key="frame" x="0.0" y="80" width="414" height="216"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="216" id="72V-TK-Tqe"/>
-                                        </constraints>
-                                    </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toxicgasinfo" translatesAutoresizingMaskIntoConstraints="NO" id="SZX-xp-QWP">
-                                        <rect key="frame" x="0.0" y="326" width="414" height="400"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="400" id="Bir-a9-Y4q"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="cv1-d0-9wn" firstAttribute="leading" secondItem="gnI-X3-o21" secondAttribute="leading" id="IGh-sF-Vjx"/>
-                            <constraint firstAttribute="trailing" secondItem="cv1-d0-9wn" secondAttribute="trailing" id="d6M-Xi-YC7"/>
-                            <constraint firstItem="cv1-d0-9wn" firstAttribute="top" secondItem="gnI-X3-o21" secondAttribute="top" id="pQd-Gm-Tyx"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="gnI-X3-o21"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="M9F-id-j2J"/>
-                    <connections>
-                        <outlet property="buttonv" destination="hyA-QO-DJG" id="TxF-eC-bt7"/>
-                        <outlet property="playerView" destination="Jxk-4A-cVw" id="Sbm-L4-RCr"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dXP-gt-leb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4692.753623188406" y="-484.15178571428567"/>
-        </scene>
         <!--Search-->
         <scene sceneID="GPD-24-zBL">
             <objects>
@@ -449,10 +407,10 @@
             </objects>
             <point key="canvasLocation" x="1042" y="871"/>
         </scene>
-        <!--Tab View Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="s5Q-AN-uzG">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="hso-Gb-6gx" customClass="TabViewController" customModule="QuickFix" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="hso-Gb-6gx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ksq-k9-8Sj" customClass="tabcontrol" customModule="QuickFix" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -460,8 +418,6 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <outlet property="tabBar" destination="ksq-k9-8Sj" id="Qvl-Ms-B4A"/>
-                        <outlet property="tabcontrol" destination="ksq-k9-8Sj" id="ol6-i5-KkN"/>
                         <segue destination="CD0-2f-Zwi" kind="relationship" relationship="viewControllers" id="FSS-CH-eSe"/>
                         <segue destination="UD2-h9-M6h" kind="relationship" relationship="viewControllers" id="v5r-tz-2j6"/>
                         <segue destination="xMl-Kt-0HW" kind="relationship" relationship="viewControllers" id="jeQ-hW-IK0"/>
@@ -471,11 +427,65 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
         </scene>
+        <!--Main Viewer View Controller-->
+        <scene sceneID="A4Z-fo-4Z7">
+            <objects>
+                <viewController storyboardIdentifier="mainviewer" id="0ii-vJ-Jhr" customClass="mainViewerViewController" customModule="QuickFix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7dH-3Q-JR0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="zdF-dg-ZxY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="726"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l76-sd-Qp8">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="xdZ-yI-d7u"/>
+                                        </constraints>
+                                        <state key="normal" title="Load video"/>
+                                        <connections>
+                                            <action selector="loadVid:" destination="0ii-vJ-Jhr" eventType="touchUpInside" id="IHg-f4-W71"/>
+                                        </connections>
+                                    </button>
+                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L52-W9-rFp" userLabel="playerView" customClass="YTPlayerView">
+                                        <rect key="frame" x="0.0" y="80" width="414" height="216"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="216" id="1wF-qd-Hcb"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MKm-pr-c6W">
+                                        <rect key="frame" x="0.0" y="326" width="414" height="400"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="eDM-UV-dwq"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zdF-dg-ZxY" secondAttribute="trailing" id="Ija-OZ-izJ"/>
+                            <constraint firstItem="zdF-dg-ZxY" firstAttribute="leading" secondItem="iAz-Ir-4ge" secondAttribute="leading" id="fzg-XE-KjI"/>
+                            <constraint firstItem="zdF-dg-ZxY" firstAttribute="top" secondItem="iAz-Ir-4ge" secondAttribute="top" id="xhd-2k-3No"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iAz-Ir-4ge"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="MKm-pr-c6W" id="lE6-ZK-RJz"/>
+                        <outlet property="loadVidBtn" destination="l76-sd-Qp8" id="9zD-T1-PF3"/>
+                        <outlet property="playerView" destination="L52-W9-rFp" id="TEf-CC-cbO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jk8-cW-ShN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5555" y="-244"/>
+        </scene>
     </scenes>
     <resources>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="hand.draw.fill" catalog="system" width="128" height="107"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="toxicgasinfo" width="696" height="1094"/>
     </resources>
 </document>
