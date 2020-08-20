@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		28FCB7E140F3AAD8B8CAC9DD /* Pods_QuickFix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFCA0D88E54E8A055432C45 /* Pods_QuickFix.framework */; };
-		2A015FA124D10C6D000F7958 /* toxicFumesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A015FA024D10C6D000F7958 /* toxicFumesViewController.swift */; };
 		2A428BC424CFE9CE009E9FF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A428BC324CFE9CE009E9FF7 /* AppDelegate.swift */; };
 		2A428BC624CFE9CE009E9FF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A428BC524CFE9CE009E9FF7 /* SceneDelegate.swift */; };
 		2A428BC824CFE9CE009E9FF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A428BC724CFE9CE009E9FF7 /* ViewController.swift */; };
@@ -17,15 +16,15 @@
 		2A428BD024CFE9D2009E9FF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A428BCE24CFE9D2009E9FF7 /* LaunchScreen.storyboard */; };
 		2A428BDD24CFEBD9009E9FF7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A428BDB24CFEBD9009E9FF7 /* Constants.swift */; };
 		2A428BDE24CFEBD9009E9FF7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A428BDC24CFEBD9009E9FF7 /* Utilities.swift */; };
+		2A51F9FF24EE4CC800F5DFA9 /* mainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51F9FE24EE4CC800F5DFA9 /* mainTabBarController.swift */; };
 		2A85254F24DBD5AB00708B75 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A85254E24DBD5AB00708B75 /* settingsViewController.swift */; };
+		2AC9C12D24EB9D36001A2164 /* mainViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC9C12C24EB9D36001A2164 /* mainViewerViewController.swift */; };
 		2ADC65E424DA6F9C00899C26 /* selfHurtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADC65E324DA6F9C00899C26 /* selfHurtViewController.swift */; };
 		2ADE5EBF24DC2BD300BD6267 /* controllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE5EBE24DC2BD300BD6267 /* controllerViewController.swift */; };
-		2ADE5EC124DC2D9A00BD6267 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE5EC024DC2D9A00BD6267 /* TabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		140EA79CCA496F3A0325EE9A /* Pods-QuickFix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickFix.debug.xcconfig"; path = "Target Support Files/Pods-QuickFix/Pods-QuickFix.debug.xcconfig"; sourceTree = "<group>"; };
-		2A015FA024D10C6D000F7958 /* toxicFumesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toxicFumesViewController.swift; sourceTree = "<group>"; };
 		2A428BC024CFE9CE009E9FF7 /* QuickFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A428BC324CFE9CE009E9FF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A428BC524CFE9CE009E9FF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,10 +35,11 @@
 		2A428BD124CFE9D2009E9FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A428BDB24CFEBD9009E9FF7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2A428BDC24CFEBD9009E9FF7 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		2A51F9FE24EE4CC800F5DFA9 /* mainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTabBarController.swift; sourceTree = "<group>"; };
 		2A85254E24DBD5AB00708B75 /* settingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
+		2AC9C12C24EB9D36001A2164 /* mainViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewerViewController.swift; sourceTree = "<group>"; };
 		2ADC65E324DA6F9C00899C26 /* selfHurtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfHurtViewController.swift; sourceTree = "<group>"; };
 		2ADE5EBE24DC2BD300BD6267 /* controllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controllerViewController.swift; sourceTree = "<group>"; };
-		2ADE5EC024DC2D9A00BD6267 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		9786B76D51690A76CB0BE961 /* Pods-QuickFix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickFix.release.xcconfig"; path = "Target Support Files/Pods-QuickFix/Pods-QuickFix.release.xcconfig"; sourceTree = "<group>"; };
 		BFFCA0D88E54E8A055432C45 /* Pods_QuickFix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickFix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,14 +73,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2A015F9F24D10C54000F7958 /* Articles */ = {
-			isa = PBXGroup;
-			children = (
-				2A015FA024D10C6D000F7958 /* toxicFumesViewController.swift */,
-			);
-			path = Articles;
-			sourceTree = "<group>";
-		};
 		2A428BB724CFE9CE009E9FF7 = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				2ADC65E224DA6F6500899C26 /* Styling View Controllers */,
-				2A015F9F24D10C54000F7958 /* Articles */,
 				2A428BDA24CFEBB7009E9FF7 /* Helpers */,
 				2A428BC324CFE9CE009E9FF7 /* AppDelegate.swift */,
 				2A428BC524CFE9CE009E9FF7 /* SceneDelegate.swift */,
@@ -112,6 +103,7 @@
 				2A428BCC24CFE9D2009E9FF7 /* Assets.xcassets */,
 				2A428BCE24CFE9D2009E9FF7 /* LaunchScreen.storyboard */,
 				2A428BD124CFE9D2009E9FF7 /* Info.plist */,
+				2AC9C12C24EB9D36001A2164 /* mainViewerViewController.swift */,
 			);
 			path = QuickFix;
 			sourceTree = "<group>";
@@ -131,7 +123,7 @@
 				2ADC65E324DA6F9C00899C26 /* selfHurtViewController.swift */,
 				2A85254E24DBD5AB00708B75 /* settingsViewController.swift */,
 				2ADE5EBE24DC2BD300BD6267 /* controllerViewController.swift */,
-				2ADE5EC024DC2D9A00BD6267 /* TabViewController.swift */,
+				2A51F9FE24EE4CC800F5DFA9 /* mainTabBarController.swift */,
 			);
 			path = "Styling View Controllers";
 			sourceTree = "<group>";
@@ -253,13 +245,13 @@
 			files = (
 				2A428BC824CFE9CE009E9FF7 /* ViewController.swift in Sources */,
 				2ADC65E424DA6F9C00899C26 /* selfHurtViewController.swift in Sources */,
-				2A015FA124D10C6D000F7958 /* toxicFumesViewController.swift in Sources */,
 				2ADE5EBF24DC2BD300BD6267 /* controllerViewController.swift in Sources */,
 				2A428BC424CFE9CE009E9FF7 /* AppDelegate.swift in Sources */,
 				2A428BC624CFE9CE009E9FF7 /* SceneDelegate.swift in Sources */,
 				2A428BDE24CFEBD9009E9FF7 /* Utilities.swift in Sources */,
+				2AC9C12D24EB9D36001A2164 /* mainViewerViewController.swift in Sources */,
 				2A428BDD24CFEBD9009E9FF7 /* Constants.swift in Sources */,
-				2ADE5EC124DC2D9A00BD6267 /* TabViewController.swift in Sources */,
+				2A51F9FF24EE4CC800F5DFA9 /* mainTabBarController.swift in Sources */,
 				2A85254F24DBD5AB00708B75 /* settingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
