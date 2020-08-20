@@ -52,15 +52,25 @@ class Utilities {
         return (UIImage(named: "error")!, false)
     }
     
-    static func load(_ viewing:YTPlayerView!, _ imageview:UIImageView, _ nameid:String){
+    static func load(_ viewing:YTPlayerView!, _ imageview:UIImageView, _ nameid:String, _ viewingvid:Bool){
         let getid = self.DetYTID(nameid, true)
         let (getimg, worked) = self.DetImg(nameid, true)
-        if worked{
-            imageview.image = getimg
+        if viewingvid {
+            if worked{
+                imageview.image = getimg
+            }
+            else{
+                print("ERROR getting image")
+            }
+            viewing.load(withVideoId: getid)
+        }else{
+            if worked{
+                imageview.image = getimg
+            }
+            else{
+                print("ERROR getting image")
+            }
         }
-        else{
-            print("ERROR getting image")
-        }
-        viewing.load(withVideoId: getid)
+        
     }
 }
