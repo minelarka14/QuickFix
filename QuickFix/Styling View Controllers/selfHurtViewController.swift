@@ -30,6 +30,33 @@ class selfHurtViewController: UIViewController {
         Utilities.styleFilledButton(cut)
         Utilities.styleFilledButton(strained)
     }
+    func move(){
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let resultViewController = storyBoard.instantiateViewController(withIdentifier: Constants.storyboard.mainviewer) as! mainViewerViewController
+        self.present(resultViewController, animated:true, completion:nil)
+    }
+    @IBAction func fellDown(_ sender: Any) {
+    }
+    @IBAction func burnt(_ sender: Any) {
+        Constants.view.viewid = "burnt"
+        move()
+    }
+    @IBAction func hitSth(_ sender: Any) {
+    }
+    @IBAction func toxicGas(_ sender: Any) {
+        Constants.view.viewid = "toxicgas"
+        move()
+    }
+    @IBAction func gotCut(_ sender: Any) {
+        Constants.view.viewid = "cut"
+        move()
+    }
+    @IBAction func strainMuscle(_ sender: Any) {
+        Constants.view.viewid = "musclestr"
+        move()
+    }
+    
 }
 
 class kindofforce: UIViewController{
