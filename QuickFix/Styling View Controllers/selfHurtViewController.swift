@@ -25,7 +25,6 @@ class selfHurtViewController: UIViewController {
     func setup(){
         Utilities.styleFilledButton(felldown)
         Utilities.styleFilledButton(burnt)
-        Utilities.styleFilledButton(hit)
         Utilities.styleFilledButton(toxicfume)
         Utilities.styleFilledButton(cut)
         Utilities.styleFilledButton(strained)
@@ -37,6 +36,8 @@ class selfHurtViewController: UIViewController {
         self.present(resultViewController, animated:true, completion:nil)
     }
     @IBAction func fellDown(_ sender: Any) {
+        Constants.view.viewid = "fall"
+        move()
     }
     @IBAction func burnt(_ sender: Any) {
         Constants.view.viewid = "burnt"
