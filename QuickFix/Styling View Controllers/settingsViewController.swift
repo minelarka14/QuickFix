@@ -9,7 +9,11 @@
 import UIKit
 
 class settingsViewController: UIViewController{
+    @IBOutlet weak var dataSaverModeSwitch: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    @IBAction func dataSaverModeChanged(_ sender: Any) {
+    }
+    
 }
