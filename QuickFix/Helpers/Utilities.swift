@@ -35,6 +35,8 @@ class Utilities {
                 return "4e7evinsfm0"
             case "burnt":
                 return "O1kiguGUt3o"
+            case "fall":
+                return "aRzljLptRok"
             default:
                 return "INCORRECT_NAME_ERROR"
             }
@@ -53,6 +55,8 @@ class Utilities {
                 return (UIImage(named: "cut"), true)
             case "burnt":
                 return (UIImage(named: "burnt"), true)
+            case "fall":
+                return(UIImage(named: "fall"), true)
             default:
                 assert(true, "INCORRECT_NAME_ERROR")
             }
