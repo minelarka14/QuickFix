@@ -17,6 +17,9 @@ struct Constants {
     struct storyboard {
         static var mainviewer = "mainviewer"
     }
+    struct settings {
+        static var dataSaverMode = true
+    }
     static var curtheme = "Light"
     static var color = UIColor.init(red: 255/255, green: 0/255, blue: 0/255, alpha: 1)
 }
