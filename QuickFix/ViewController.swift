@@ -19,14 +19,6 @@ class ViewController: UIViewController {
     }
     
     func setuplooks(){
-        switch Constants.curtheme {
-        case "Light":
-            self.view.backgroundColor = UIColor.white
-        case "Dark":
-            self.view.backgroundColor = UIColor.init(red: 45/255, green: 48/255, blue: 45/255, alpha: 1)
-        default:
-            self.view.backgroundColor = UIColor.white
-        }
         Utilities.styleFilledButton(selfHurt)
         Utilities.styleFilledButton(othHurt)
     }
