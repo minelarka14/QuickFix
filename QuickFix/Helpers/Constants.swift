@@ -20,6 +20,7 @@ struct Constants {
     struct settings {
         static var dataSaverMode = true
     }
+    static var articles = ["Toxic gas", "Fall", "Burnt", "Cut", "Muscle Strain"]
     static var curtheme = "Light"
     static var color = UIColor.init(red: 255/255, green: 0/255, blue: 0/255, alpha: 1)
 }

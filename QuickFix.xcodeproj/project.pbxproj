@@ -18,7 +18,6 @@
 		2A428BDE24CFEBD9009E9FF7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A428BDC24CFEBD9009E9FF7 /* Utilities.swift */; };
 		2A4D1AEA24F4D7F40011203D /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4D1AE924F4D7F40011203D /* searchViewController.swift */; };
 		2A5143F124F6245600C8F973 /* TBTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5143F024F6245600C8F973 /* TBTableViewController.swift */; };
-		2A85254F24DBD5AB00708B75 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A85254E24DBD5AB00708B75 /* settingsViewController.swift */; };
 		2AC9C12D24EB9D36001A2164 /* mainViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC9C12C24EB9D36001A2164 /* mainViewerViewController.swift */; };
 		2ADC65E424DA6F9C00899C26 /* selfHurtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADC65E324DA6F9C00899C26 /* selfHurtViewController.swift */; };
 		2ADE5EBF24DC2BD300BD6267 /* controllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE5EBE24DC2BD300BD6267 /* controllerViewController.swift */; };
@@ -40,7 +39,6 @@
 		2A428BDC24CFEBD9009E9FF7 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		2A4D1AE924F4D7F40011203D /* searchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
 		2A5143F024F6245600C8F973 /* TBTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBTableViewController.swift; sourceTree = "<group>"; };
-		2A85254E24DBD5AB00708B75 /* settingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		2AC9C12C24EB9D36001A2164 /* mainViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewerViewController.swift; sourceTree = "<group>"; };
 		2ADC65E324DA6F9C00899C26 /* selfHurtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfHurtViewController.swift; sourceTree = "<group>"; };
 		2ADE5EBE24DC2BD300BD6267 /* controllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controllerViewController.swift; sourceTree = "<group>"; };
@@ -129,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				2ADC65E324DA6F9C00899C26 /* selfHurtViewController.swift */,
-				2A85254E24DBD5AB00708B75 /* settingsViewController.swift */,
 				2ADE5EBE24DC2BD300BD6267 /* controllerViewController.swift */,
 				2AE6F60624F89534002CB7F6 /* settingViewController.swift */,
 				2AE6F60824F895DB002CB7F6 /* othHurtViewController.swift */,
@@ -262,7 +259,6 @@
 				2A4D1AEA24F4D7F40011203D /* searchViewController.swift in Sources */,
 				2AC9C12D24EB9D36001A2164 /* mainViewerViewController.swift in Sources */,
 				2A428BDD24CFEBD9009E9FF7 /* Constants.swift in Sources */,
-				2A85254F24DBD5AB00708B75 /* settingsViewController.swift in Sources */,
 				2A5143F124F6245600C8F973 /* TBTableViewController.swift in Sources */,
 				2AE6F60724F89534002CB7F6 /* settingViewController.swift in Sources */,
 			);
