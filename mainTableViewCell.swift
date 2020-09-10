@@ -17,13 +17,12 @@ class mainTableViewCell: UITableViewCell {
     public var delegate: PlayVideoCellProtocol!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        viewBtn.layer.cornerRadius = 5
     }
-
+    @IBOutlet weak var viewBtn: UIButton!
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        Constants.view.viewid = convertViewID((self.textLabel?.text)!)
-        self.delegate.playVideoButtonDidSelect()
+        
     }
     func convertViewID (_ initString: String) -> String {
         var returnString:String?
@@ -44,4 +43,8 @@ class mainTableViewCell: UITableViewCell {
         return returnString!
     }
 
+    @IBAction func viewPress(_ sender: Any) {
+        Constants.view.viewid = convertViewID((self.textLabel?.text)!)
+        self.delegate.playVideoButtonDidSelect()
+    }
 }
