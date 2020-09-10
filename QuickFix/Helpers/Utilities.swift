@@ -1,6 +1,6 @@
 //
 //  Utilities.swift
-//  BloodDonation
+//  QuickFix
 //
 //  Created by Muhammad Osaid on 25/6/20.
 //  Copyright © 2020 Muhammad Osaid. All rights reserved.
@@ -11,7 +11,7 @@ import UIKit
 import youtube_ios_player_helper
 
 class Utilities {
-    
+    //MARK: Styling
     static func styleFilledButton(_ button:UIButton) {
         button.backgroundColor = Constants.color
         button.layer.cornerRadius = 25.0
@@ -24,6 +24,7 @@ class Utilities {
         textfield.borderStyle = .none
         textfield.layer.addSublayer(bottomLine)
     }
+    //MARK: Loading Video
     static func DetYTID(_ nameid:String, _ viewing:Bool) -> String{
         if viewing{
             switch nameid {
